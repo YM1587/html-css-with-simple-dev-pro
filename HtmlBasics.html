@@ -153,3 +153,132 @@ Types of CSS Selectors
 9. Attribute Selector ([attribute]) - Selects elements based on their attributes (e.g., [type="text"] selects all input elements with type "text").
 10. Pseudo-classes (:pseudo-class) - Selects elements based on their state or position (e.g., :hover, :first-child, :nth-child(n)).
 11. Pseudo-elements (::pseudo-element) - Selects a part of an element (e.g., ::before, ::after). -->
+<!-- 12. Grouping Selector (selector1, selector2) - Groups multiple selectors together to apply the same styles (e.g., h1, h2, p selects all <h1>, <h2>, and <p> elements). -->
+<!-- 13. Combinators - Selects elements based on their relationship (descendant, child, sibling) using combinators like +, >, ~.
+14. Attribute Selector - Selects elements based on specific attributes or attribute values (e.g., [type="text"], [href^="https://"]).
+15. Negation Pseudo-class (:not()) - Selects elements that do not match a specified selector (e.g., :not(.class)).
+16. Nth-child and Nth-of-type Pseudo-classes - Selects elements based on their position in a parent element (e.g., li:nth-child(2), div:nth-of-type(3)).
+17. Language Pseudo-class (:lang()) - Selects elements based on the language of the content (e.g., :lang(en)).
+18. Placeholder Pseudo-element (::placeholder) - Styles the placeholder text in input fields.
+19. Selection Pseudo-element (::selection) - Styles the portion of an element that has been highlighted by the user.
+20. Shadow DOM Selector - Targets elements within a shadow DOM using ::shadow or /deep/. -->
+
+<!-- CSS Properties: CSS properties are used to define the styles for HTML elements. Each property has a name and a value, 
+and they are used within CSS rules to control various aspects of an element's appearance.
+
+Types of CSS Properties
+1. Color Properties
+   - color: Sets the text color.
+   - background-color: Sets the background color of an element.
+   - opacity: Sets the transparency level of an element.
+
+2. Font Properties
+   - font-family: Specifies the font type for text.
+   - font-size: Sets the size of the font.
+   - font-weight: Defines the thickness of the font (boldness).
+   - line-height: Sets the height of each line of text.
+
+3. Text Properties
+   - text-align: Aligns text within an element (left, right, center, justify).
+   - text-decoration: Adds decorations to text (underline, overline, line-through).
+   - text-transform: Controls the capitalization of text (uppercase, lowercase).
+
+4. Box Model Properties
+   - width: Sets the width of an element.
+   - height: Sets the height of an element.
+   - padding: Controls the space between the content and the border of an element.
+   - margin: Controls the space outside of an element.
+   - border: Defines the border around an element.
+
+5. Positioning Properties
+   - position: Specifies how an element is positioned (static, relative, absolute, fixed).
+   - top, right, bottom, left: Sets the position of an element relative to its containing block.
+   - z-index: Controls the stacking order of positioned elements.
+
+6. Flexbox Properties
+   - display: flex; Sets an element to use flexbox layout.
+   - flex-direction: Defines the direction of flex items (row, column).
+   - justify-content: Aligns flex items along the main axis (flex-start, center, space-between).
+   - align-items: Aligns flex items along the cross axis (stretch, center).
+
+7. Grid Properties
+   - display: grid; Sets an element to use grid layout.
+   - grid-template-columns/rows: Defines the number and size of columns/rows in a grid.
+   - grid-area: Specifies a grid item's position within the grid.
+
+8. Background Properties
+   - background-image: Sets a background image for an element.
+   - background-size: Controls the size of a background image.
+   - background-repeat: Determines if a background image should repeat.
+
+9. Transition and Animation Properties
+   - transition: Defines the transition effect when changing property values.
+   - animation: Specifies the animation properties for an element.
+   - keyframes: Defines the intermediate steps in a CSS animation.
+   - transform: Applies 2D or 3D transformations to an element (rotate, scale, translate).
+10. Overflow Properties
+   - overflow: Controls what happens when content overflows an element's box (visible, hidden, scroll).
+   - overflow-x: Controls horizontal overflow.
+   - overflow-y: Controls vertical overflow.
+11. Visibility Properties
+   - visibility: Controls the visibility of an element (visible, hidden).
+   - display: Controls the display behavior of an element (block, inline, none).
+12. List Properties
+   - list-style: Sets the style of list items (bullets, numbers).
+   - list-style-type: Specifies the type of bullet or numbering.
+   - list-style-position: Controls the position of the list marker (inside, outside).
+13. Cursor Properties
+   - cursor: Sets the type of cursor to be displayed when hovering over an element (pointer, text, wait).
+   - cursor: pointer; Sets the cursor to a pointer when hovering over an element.
+14. Filter Properties
+   - filter: Applies graphical effects like blur, brightness, contrast, etc.
+   - filter: grayscale(100%); Converts an image to grayscale.
+   - filter: blur(5px); Applies a blur effect to an image.
+   - filter: brightness(50%); Adjusts the brightness of an image.
+   - filter: contrast(200%); Adjusts the contrast of an image.
+   - filter: sepia(100%); Applies a sepia tone to an image.
+   - filter: drop-shadow(0 0 5px black); Adds a shadow effect to an image.
+   - filter: invert(100%); Inverts the colors of an image.
+   - filter: saturate(200%); Increases the saturation of an image.
+   - filter: hue-rotate(90deg); Rotates the hue of an image by 90 degrees.
+   - filter: opacity(50%); Sets the opacity of an image to 50%.
+   - filter: contrast(150%); Increases the contrast of an image to 150%.
+   - filter: grayscale(50%); Converts an image to grayscale with 50% intensity.
+
+   
+15. Transition Properties                                                 
+   - transition: Defines the transition effect when changing property values.
+   - transition-property: Specifies the CSS property to which the transition effect is applied.
+   - transition-duration: Sets the duration of the transition effect.
+   - transition-timing-function: Defines the speed curve of the transition effect (linear, ease-in, ease-out).
+   - transition-delay: Sets a delay before the transition effect starts.      
+16. Animation Properties    
+    - animation: Specifies the animation properties for an element.
+    - animation-name: Defines the name of the keyframes to be used in the animation.
+    - animation-duration: Sets the duration of the animation.
+    - animation-timing-function: Defines the speed curve of the animation (linear, ease-in, ease-out).
+    - animation-delay: Sets a delay before the animation starts.
+    - animation-iteration-count: Specifies how many times the animation should repeat (infinite, 1, 2).
+    - animation-direction: Defines whether the animation should play forwards, backwards, or alternate.
+    - animation-fill-mode: Specifies how a CSS animation should apply styles to its target before and after it is executing. -->
+<!-- 17. Media Queries            
+    - media query: A CSS technique used to apply styles based on the device's characteristics (screen size, resolution).
+    - @media: The rule used to define media queries.
+    - min-width/max-width: Specifies the minimum or maximum width of the viewport for applying styles.
+    - orientation: Specifies the orientation of the device (portrait or landscape).
+    - aspect-ratio: Defines the aspect ratio of the viewport for applying styles.
+    - resolution: Specifies the resolution of the device for applying styles.
+    - hover: Specifies whether the user can hover over an element (hover, none).
+    - pointer: Specifies the type of pointing device (coarse, fine).
+    - print: Applies styles specifically for printed documents.
+    - screen: Applies styles specifically for screens (desktop, tablet, mobile).
+    - all: Applies styles to all media types. -->
+<!-- 18. Responsive Design Properties
+    - responsive design: A design approach that ensures web pages look good on all devices by using flexible layouts, images, and CSS media queries.
+    - fluid grid layout: A layout that uses relative units (percentages) instead of fixed units (pixels) to create a flexible grid system.
+    - flexible images: Images that scale with the layout using max-width: 100%; to ensure they fit within their container.
+    - viewport meta tag: A tag used in HTML to control the layout on mobile browsers by setting the width and scaling of the viewport.
+    - breakpoints: Specific points in the design where the layout changes based on the screen size or device type.
+    - mobile-first design: A design approach that starts with designing for smaller screens first and then progressively enhances for larger screens. -->                                   
+<!-- 19. Custom Properties (CSS Variables)
+    
