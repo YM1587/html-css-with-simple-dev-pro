@@ -281,4 +281,176 @@ Types of CSS Properties
     - breakpoints: Specific points in the design where the layout changes based on the screen size or device type.
     - mobile-first design: A design approach that starts with designing for smaller screens first and then progressively enhances for larger screens. -->                                   
 <!-- 19. Custom Properties (CSS Variables)
-    
+    - custom properties: Variables defined in CSS that can store values for reuse throughout the stylesheet.
+    - --variable-name: The syntax used to define a custom property, starting with two dashes.
+    - var(--variable-name): The function used to retrieve the value of a custom property.
+    - fallback value: A default value provided in case the custom property is not defined or supported.
+    - scope: The context in which a custom property is defined and can be accessed (global or local).
+    - inheritance: Custom properties can inherit values from their parent elements, allowing for easier management of styles. -->     
+<!-- 20. CSS Grid Layout            
+    - grid layout: A two-dimensional layout system that allows for the creation of complex web layouts using rows and columns.
+    - grid container: The parent element that defines the grid layout using display: grid; or display: inline-grid;.
+    - grid item: The child elements within the grid container that are arranged in the grid layout.
+    - grid-template-columns/rows: Properties used to define the number and size of columns and rows in the grid.
+    - grid-area: A shorthand property for defining a grid item's position and size within the grid.
+    - gap: A property used to define the space between rows and columns in the grid layout.
+    - auto-fill/auto-fit: Keywords used to automatically fill or fit available space in the grid with items.
+    - minmax(): A function used to define a range of sizes for grid items, allowing for flexible layouts.
+    - fr unit: A flexible unit that represents a fraction of the available space in the grid container. -->
+<!-- 21. CSS Flexbox Layout 
+    - flexbox layout: A one-dimensional layout system that allows for the arrangement of items in a row or column.
+    - flex container: The parent element that defines the flex layout using display: flex; or display: inline-flex;.
+    - flex item: The child elements within the flex container that are arranged in the flex layout.
+    - flex-direction: A property used to define the direction of the flex items (row, column, row-reverse, column-reverse).
+    - justify-content: A property used to align flex items along the main axis (flex-start, center, space-between, space-around).
+    - align-items: A property used to align flex items along the cross axis (stretch, center, baseline).
+    - flex-wrap: A property used to control whether flex items should wrap onto multiple lines (nowrap, wrap, wrap-reverse).
+    - order: A property used to control the order of flex items within the container.
+    - align-self: A property used to override the align-items property for individual flex items. -->
+<!-- 22. CSS Transitions and Animations
+    - CSS transitions: A technique used to create smooth changes between property values over a specified duration.
+    - transition property: The CSS property that will change during the transition.
+    - transition duration: The time it takes for the transition to complete.
+    - transition timing function: The speed curve of the transition (linear, ease-in, ease-out).
+    - transition delay: The time to wait before starting the transition.
+    - CSS animations: A more complex technique that allows for keyframe-based animations with multiple steps and properties.
+    - @keyframes: A rule used to define the keyframes of an animation, specifying the styles at different points in the animation timeline.
+    - animation name: The name of the animation defined in the @keyframes rule.
+    - animation duration: The time it takes for the animation to complete one cycle.
+    - animation iteration count: The number of times the animation should repeat (infinite, 1, 2).
+    - animation direction: The direction in which the animation should play (normal, reverse, alternate). -->
+<!-- 23. CSS Box Model
+    - box model: A fundamental concept in CSS that describes the rectangular boxes generated for elements in the document tree.
+    - content area: The area where the content of the element is displayed (text, images, etc.).
+    - padding: The space between the content and the border of the element.
+    - border: The line surrounding the padding and content areas.
+    - margin: The space outside the border, separating the element from other elements.
+    - width/height: The dimensions of the content area, excluding padding, border, and margin.
+    - box-sizing: A property that controls how the width and height of an element are calculated (content-box or border-box). -->
+<!-- 24. CSS Media Queries        
+    - media queries: A CSS technique used to apply styles based on the device's characteristics (screen size, resolution).
+    - @media rule: The syntax used to define media queries in CSS.
+    - min-width/max-width: Properties used to set the minimum or maximum width of the viewport for applying styles.
+    - orientation: A property used to specify the orientation of the device (portrait or landscape).
+    - aspect-ratio: A property used to define the aspect ratio of the viewport for applying styles.
+    - print media query: A specific media query used to apply styles for printed documents. -->
+<!-- 25. CSS Variables (Custom Properties)
+    - CSS variables: Custom properties that allow you to store values for reuse throughout the stylesheet.
+    - --variable-name: The syntax used to define a custom property, starting with two dashes.
+    - var(--variable-name): The function used to retrieve the value of a custom property.
+    - fallback value: A default value provided in case the custom property is not defined or supported.
+    - scope: The context in which a custom property is defined and can be accessed (global or local).
+    - inheritance: Custom properties can inherit values from their parent elements, allowing for easier management of styles. -->
+<!-- 26. CSS Grid Layout
+    - grid layout: A two-dimensional layout system that allows for the creation of complex web layouts using rows and columns.
+    - grid container: The parent element that defines the grid layout using display: grid; or display: inline-grid;.
+    - grid item: The child elements within the grid container that are arranged in the grid layout.
+    - grid-template-columns/rows: Properties used to define the number and size of columns and rows in the grid.
+    - grid-area: A shorthand property for defining a grid item's position and size within the grid.
+    - gap: A property used to define the space between rows and columns in the grid layout.
+    - auto-fill/auto-fit: Keywords used to automatically fill or fit available space in the grid with items.
+    - minmax(): A function used to define a range of sizes for grid items, allowing for flexible layouts.
+    - fr unit: A flexible unit that represents a fraction of the available space in the grid container. -->
+<!-- 27. CSS Flexbox Layout
+    - flexbox layout: A one-dimensional layout system that allows for the arrangement of items in a row or column.
+    - flex container: The parent element that defines the flex layout using display: flex; or display: inline-flex;.
+    - flex item: The child elements within the flex container that are arranged in the flex layout.
+    - flex-direction: A property used to define the direction of the flex items (row, column, row-reverse, column-reverse).
+    - justify-content: A property used to align flex items along the main axis (flex-start, center, space-between, space-around).
+    - align-items: A property used to align flex items along the cross axis (stretch, center, baseline).
+    - flex-wrap: A property used to control whether flex items should wrap onto multiple lines (nowrap, wrap, wrap-reverse).
+    - order: A property used to control the order of flex items within the container.
+    - align-self: A property used to override the align-items property for individual flex items. -->
+<!-- 28. CSS Filters
+    - CSS filters: A set of graphical effects that can be applied to images and other elements.
+    - filter property: The property used to apply filters to an element.
+    - blur(): A function that applies a Gaussian blur effect to an element.
+    - brightness(): A function that adjusts the brightness of an element.
+    - contrast(): A function that adjusts the contrast of an element.
+    - grayscale(): A function that converts an element to grayscale.
+    - hue-rotate(): A function that rotates the hue of an element's colors.
+    - invert(): A function that inverts the colors of an element.
+    - opacity(): A function that sets the transparency level of an element.
+    - saturate(): A function that adjusts the saturation of an element's colors. -->
+<!-- 29. CSS Shapes
+    - CSS shapes: A technique used to create non-rectangular shapes using CSS properties.
+    - clip-path: A property used to define a clipping region for an element, allowing for the creation of custom shapes.
+    - polygon(): A function that creates a polygon shape by defining its vertices.
+    - circle(): A function that creates a circular shape by defining its center and radius.
+    - ellipse(): A function that creates an elliptical shape by defining its center and radii.
+    - path(): A function that creates a custom shape using SVG path syntax.
+    - mask: A property used to define a mask for an element, allowing for the creation of complex shapes and effects. -->
+<!-- 30. CSS Grid and Flexbox
+    - grid layout: A two-dimensional layout system that allows for the creation of complex web layouts using rows and columns.
+    - flexbox layout: A one-dimensional layout system that allows for the arrangement of items in a row or column.
+    - grid container: The parent element that defines the grid layout using display: grid; or display: inline-grid;.
+    - flex container: The parent element that defines the flex layout using display: flex; or display: inline-flex;.
+    - grid item: The child elements within the grid container that are arranged in the grid layout.
+    - flex item: The child elements within the flex container that are arranged in the flex layout.
+    - grid-template-columns/rows: Properties used to define the number and size of columns and rows in the grid.
+    - flex-direction: A property used to define the direction of the flex items (row, column, row-reverse, column-reverse).
+    - justify-content: A property used to align flex items along the main axis (flex-start, center, space-between, space-around).
+    - align-items: A property used to align flex items along the cross axis (stretch, center, baseline).
+    - gap: A property used to define the space between rows and columns in the grid layout.
+    - order: A property used to control the order of flex items within the container. -->
+<!-- 31. CSS Variables
+    - CSS variables: Custom properties that allow you to store values for reuse throughout the stylesheet.
+    - --variable-name: The syntax used to define a custom property, starting with two dashes.
+    - var(--variable-name): The function used to retrieve the value of a custom property.
+    - fallback value: A default value provided in case the custom property is not defined or supported.
+    - scope: The context in which a custom property is defined and can be accessed (global or local).
+    - inheritance: Custom properties can inherit values from their parent elements, allowing for easier management of styles. --> 
+<!-- 32. CSS Grid Layout
+    - grid layout: A two-dimensional layout system that allows for the creation of complex web layouts using rows and columns.
+    - grid container: The parent element that defines the grid layout using display: grid; or display: inline-grid;.
+    - grid item: The child elements within the grid container that are arranged in the grid layout.
+    - grid-template-columns/rows: Properties used to define the number and size of columns and rows in the grid.
+    - grid-area: A shorthand property for defining a grid item's position and size within the grid.
+    - gap: A property used to define the space between rows and columns in the grid layout.
+    - auto-fill/auto-fit: Keywords used to automatically fill or fit available space in the grid with items.
+    - minmax(): A function used to define a range of sizes for grid items, allowing for flexible layouts.
+    - fr unit: A flexible unit that represents a fraction of the available space in the grid container. -->   
+<!-- 33. CSS Flexbox Layout 
+    - flexbox layout: A one-dimensional layout system that allows for the arrangement of items in a row or column.
+    - flex container: The parent element that defines the flex layout using display: flex; or display: inline-flex;.
+    - flex item: The child elements within the flex container that are arranged in the flex layout.
+    - flex-direction: A property used to define the direction of the flex items (row, column, row-reverse, column-reverse).
+    - justify-content: A property used to align flex items along the main axis (flex-start, center, space-between, space-around).
+    - align-items: A property used to align flex items along the cross axis (stretch, center, baseline).
+    - flex-wrap: A property used to control whether flex items should wrap onto multiple lines (nowrap, wrap, wrap-reverse).
+    - order: A property used to control the order of flex items within the container.
+    - align-self: A property used to override the align-items property for individual flex items. -->
+<!-- 34. CSS Transitions and Animations
+    - CSS transitions: A technique used to create smooth changes between property values over a specified duration.
+    - transition property: The CSS property that will change during the transition.
+    - transition duration: The time it takes for the transition to complete.
+    - transition timing function: The speed curve of the transition (linear, ease-in, ease-out).
+    - transition delay: The time to wait before starting the transition.
+    - CSS animations: A more complex technique that allows for keyframe-based animations with multiple steps and properties.
+    - @keyframes: A rule used to define the keyframes of an animation, specifying the styles at different points in the animation timeline.
+    - animation name: The name of the animation defined in the @keyframes rule.
+    - animation duration: The time it takes for the animation to complete one cycle.
+    - animation iteration count: The number of times the animation should repeat (infinite, 1, 2).
+    - animation direction: The direction in which the animation should play (normal, reverse, alternate). -->
+<!-- 35. CSS Box Model 
+    - box model: A fundamental concept in CSS that describes the rectangular boxes generated for elements in the document tree.
+    - content area: The area where the content of the element is displayed (text, images, etc.).
+    - padding: The space between the content and the border of the element.
+    - border: The line surrounding the padding and content areas.
+    - margin: The space outside the border, separating the element from other elements.
+    - width/height: The dimensions of the content area, excluding padding, border, and margin.
+    - box-sizing: A property that controls how the width and height of an element are calculated (content-box or border-box). -->
+<!-- 36. CSS Media Queries 
+    - media queries: A CSS technique used to apply styles based on the device's characteristics (screen size, resolution).
+    - @media rule: The syntax used to define media queries in CSS.
+    - min-width/max-width: Properties used to set the minimum or maximum width of the viewport for applying styles.
+    - orientation: A property used to specify the orientation of the device (portrait or landscape).
+    - aspect-ratio: A property used to define the aspect ratio of the viewport for applying styles.
+    - print media query: A specific media query used to apply styles for printed documents. --> 
+<!-- 37. CSS Variables (Custom Properties)
+    - CSS variables: Custom properties that allow you to store values for reuse throughout the stylesheet.
+    - --variable-name: The syntax used to define a custom property, starting with two dashes.
+    - var(--variable-name): The function used to retrieve the value of a custom property.
+    - fallback value: A default value provided in case the custom property is not defined or supported.
+    - scope: The context in which a custom property is defined and can be accessed (global or local).
+    - inheritance: Custom properties can inherit values from their parent elements, allowing for easier management of styles. -->
